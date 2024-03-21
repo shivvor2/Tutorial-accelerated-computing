@@ -13,14 +13,8 @@ Python is an interpreted language, where each line is executed one by one by the
 **Utilize the GPU, which excels at parallel tasks**:
 
 Many computing jobs do not require sequential execution e.g. vector addition
-
-Machine code executes sequentially on CPUs (when no parallelization)
-
-  (translated from python bytecode when executed by the python virtual machine)
- 
-Each GPU thread is slower and less flexible then a CPU thread, but there are way more threads in a GPU then CPUs
-
-  --> if sequentiality is not required, GPU can execute instructions faster because there are more workers
+Machine code executes sequentially on CPUs (when no parallelization), must be done one by one.
+If sequentiality is not required, GPU can execute instructions faster because there are more threads availiable to do work
 
 ## Code tutorial
 
